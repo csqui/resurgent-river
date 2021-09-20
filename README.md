@@ -3,7 +3,7 @@
 
 The files in this repository were used to configure the network depicted below:
 
-(Images/Project1_NetworkDiagram.drawio.png)
+![Project1_NetworkDiagram drawio](https://user-images.githubusercontent.com/85413148/134089676-83753596-7bd7-4e94-a2bd-2d77029e9f04.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the beat-playbook.yml file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -26,7 +26,6 @@ Load balancing ensures that the application will be highly highly efficient, in 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the log data and system metrics.
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name     | Function       | IP Address | Operating System |
 |----------|----------------|------------|------------------|
@@ -65,7 +64,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance:
 
-(Images/docker_ps_output.png)
+![docker_ps_output](https://user-images.githubusercontent.com/85413148/134089674-da7fb7f6-8271-4a93-b1ba-5bb5d276400d.PNG)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines: 10.0.0.5 and 10.0.0.6
@@ -82,6 +81,3 @@ SSH into the control node and follow the steps below:
 - Copy the beat-playbook.yml and install-elk.yml files to /etc/ansible.
 - Update the hosts file to include IP addresses 10.0.0.5 and 10.0.0.6 under a group named [webservers] and the IP address 10.1.0.4 under a group named [elk]
 - Run the playbooks, and navigate to http://<ElkVM1's Public IP Address>:5601/app/kibana to check that the installation worked as expected.
-
-![docker_ps_output](https://user-images.githubusercontent.com/85413148/134089674-da7fb7f6-8271-4a93-b1ba-5bb5d276400d.PNG)
-![Project1_NetworkDiagram drawio](https://user-images.githubusercontent.com/85413148/134089676-83753596-7bd7-4e94-a2bd-2d77029e9f04.png)
