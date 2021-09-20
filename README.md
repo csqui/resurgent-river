@@ -21,9 +21,9 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly highly efficient, in addition to restricting unauthorized access to the network.
+Load balancing ensures that the application will be highly efficient, in addition to restricting unauthorized access to the network.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the log data and system metrics.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to operating system metrics or log data.
 
 The configuration details of each machine may be found below.
 
@@ -40,7 +40,7 @@ The machines on the internal network are not exposed to the public Internet.
 
 Only the ElkVM1 machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses: 136.36.56.1
 
-Machines within the network can only be accessed by my personal local machine (with an IP Address of 136.36.56.1).
+Machines within the network can only be accessed by a specific local machine (with an IP Address of 136.36.56.1).
 
 A summary of the access policies in place can be found in the table below.
 
@@ -71,7 +71,7 @@ This ELK server is configured to monitor the following machines: 10.0.0.5 and 10
 
 We have installed the following Beats on these machines: filebeat and metricbeat.
 
-These Beats allow us to collect the following information from each machine: Filebeat collects log data and sends it to either Elasticsearch or Logstash where the logs are indexed and put in an easy to search and read format. We could expect to see log data specifying what activities have been done on a given machine. Metricbeat allows us to collect information about the metrics of the OS and send that information to Elasticsearch or Logstash as well, again where the data can be viewed easily. Metricbeat can be expected to show information about different operating systems and their status.
+These Beats allow us to collect information from each machine. Filebeat collects log data and sends it to either Elasticsearch or Logstash where the logs are indexed and put in an easy to search and read format. We could expect to see log data specifying what activities have been done on a given machine. Metricbeat allows us to collect information about the metrics of the OS and send that information to Elasticsearch or Logstash as well, again where the data can be viewed easily. Metricbeat can be expected to show information about different operating systems and their status.
 
 
 ### Using the Playbook
